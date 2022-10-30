@@ -22,7 +22,8 @@ class db_connection
 	function db_connect(){
 		
 		//connection
-		$this->db = mysqli_connect(SERVER,USERNAME,PASSWD,DATABASE);
+		//$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+		$this->db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 		
 		//test the connection
 		if (mysqli_connect_errno()) {
